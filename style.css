@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    padding: 0px 60px;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 80px;
+}
+.sub-con{ 
+    display: grid;
+    /* grid-template-columns: 2fr 2fr;    */
+}
+.left-up img {
+    width:100%;
+    margin-bottom: 20px;
+    /* margin-top: 10px; */
+}
+.left-down{
+    display: flex;
+    width: 835px;
+    gap: 150px;
+}
+.text{
+    color: grey;
+}
+button{
+    width: 40%;
+    background-color: greenyellow;
+    outline: none;
+    padding: 10px;
+    border: 0;
+    margin-top: 20px;
+}
+.text1{
+    font-size: 34px;
+
+}
+.section1{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+
+}
+.right-div{
+    height: 100%;
+    width: 300px;
+    background-color:hsl(228, 45%, 44%);
+    
+}
+.top{
+    color: white;
+    margin-top: 10px;
+    padding: 20px;
+}
+.text4{
+    color: white;
+    font-size: 12px;
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+.new{
+    padding: 20px;
+    color: coral;
+    
+}
+
+.section-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 55px;
+}
+.image{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+.image-text{
+    color: brown;
+    margin-top: 13px;
+    line-height: 25px;
+    width: 160px;
+}
+.small-text{
+    font-size: 12px;
+    color: gray;   
+}
+.medium-text{
+    color: black;
+    font-weight: bolder;
+    font-size: 13px;
+}
+.image img{
+    width: 79px;
+}
+.section2{
+    margin-top: 30px;
+}
+.left-down2{
+    /* margin-right: 115px; */
+
+}
+
+@media (max-width:600px) {
+    .section1{
+        grid-template-columns: 1fr;
+    }
+    .left-up{
+       width: 270px;
+    }
+    .left-down{
+        grid-template-columns: 1fr;
+        display: block;
+        width: 300px;
+    }
+    
+    .right{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    .section-main{
+        grid-template-columns: 1fr;
+    }
+    .right-div{
+        width: 280px;
+    }
+    .text1{
+        width: 220px;
+    }
+}
